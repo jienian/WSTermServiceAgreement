@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/register/register",
+        "pages/login/login",
+        "pages/shouye/shouye",
+        "pages/jiaoxue/jiaoxue",
+        "pages/my/my"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WS 健身俱乐部",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+      "list": [{
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "images/main_black.png",
+        "selectedIconPath": "images/main_blue.png"
+      },
+      {
+        "pagePath": "pages/jiaoxue/jiaoxue",
+        "text": "教学",
+        "iconPath": "images/traning_black.png",
+        "selectedIconPath": "images/traning_blue.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my_black.png",
+        "selectedIconPath": "images/my_blue.png"
+      }
+    ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
