@@ -10,7 +10,7 @@
         </view>
       </view>
       <!--性别-->
-      <view class="weui-cells">
+      <!-- <view class="weui-cells">
         <view class="inputbox">
           <view class="inptxt">性别</view>
           <view class="inpbox">
@@ -22,7 +22,16 @@
             </radio-group>
           </view>
         </view>
+      </view> -->
+      <!-- 性别2 -->
+      <view class="weui-cells">
+        <radio-group class="group" bindchange="radioChange">
+          <block class="label-2" wx:for="{{radioItems}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          </block>
+        </radio-group>
       </view>
+
       <!-- 出生日期 -->
       <view class="weui-cell weui-cell_active">
         <view class="weui-cell__hd">

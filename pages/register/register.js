@@ -8,25 +8,24 @@ Page({
     checkValue:1,
     check:false,
   
-    sex:[{
-      id:1,
-      value:'男'
-    },{
-      id:2,
-      value:'女'
-    }
-  ]
+    // sex:[{
+    //   id:1,
+    //   value:'男'
+    // },{
+    //   id:2,
+    //   value:'女'
+    // }],
+    radioItems: [
+      {name: 'boy', value: '男'},
+      {name: 'girl', value: '女'}
+    ]
   },
   radioChange:function(e){
-const sex=this.data.sex
-for (let i = 0, len = sex.length; i < len; ++i) {
-  sex[i].checked = sex[i].id == e.detail.value
-}
-this.setData({
-  sex
-})
-console.log(this.data.sex);
-},
+    console.log(e.detail.value)
+  },
+
+
+
   
   /**
    * 生命周期函数--监听页面加载
@@ -82,6 +81,19 @@ console.log(this.data.sex);
    */
   onShareAppMessage() {
 
+    
+  },
+  radioChange(e) {
+    const checked = e.detail.value
+    const changed = {}
+    for (let i = 0; i < this.data.radioItems.length; i++) {
+      if (checked.indexOf(this.data.radioItems[i].name) !== -1) {
+        changed['radioItems[' + i + '].checked'] = true
+      } else {
+        changed['radioItems[' + i + '].checked'] = false
+      }
+    }
+    this.setData(changed)
   },
   bindDateChange(e) {
     this.setData({

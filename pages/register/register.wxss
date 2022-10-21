@@ -1,1 +1,4 @@
 /* pages/register/register.wxss */
+.label-2{
+  margin: 30rpx 0;
+}
