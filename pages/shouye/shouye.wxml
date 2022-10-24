@@ -1,2 +1,24 @@
-<!--pages/shouye/shouye.wxml-->
-<text>pages/shouye/shouye.wxml</text>
+<view class="logo">
+  <image src="/images/Large_Logo.png"></image>
+</view>
+
+<view class="title">
+  欢迎加入WS健身俱乐部
+</view>
+<view class="t">
+<view class="tit" style="width: 288rpx; height: auto; display: block; box-sizing: border-box">
+  <view class="tii">健身计划</view>
+  <p style="position: absolute; left: 58rpx; top: 628rpx">></p>
+  <view class="ti">生命在于运动</view>
+  <view class="ti">运动跪在坚持</view>
+  <image src="/images/line chart 1.png"></image>
+</view>
+
+<view class="tit" style="width: 288rpx; height: auto; display: block; box-sizing: border-box">
+  <view class="tii">健身报告</view>
+  <p style="position: absolute; left: 404rpx; top: 624rpx">></p>
+  <view class="ti">标准体型</view>
+  <view class="ti">从这里开始</view>
+  <image src="/images/health_report_logo.png"></image>
+</view>
+</view>
