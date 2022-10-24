@@ -5,6 +5,7 @@
 <view class="title">
   欢迎加入WS健身俱乐部
 </view>
+
 <view class="t">
 <view class="tit" style="width: 288rpx; height: auto; display: block; box-sizing: border-box">
   <view class="tii">健身计划</view>

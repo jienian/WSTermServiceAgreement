@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    background:['/images/banner-01.png','/images/banner-02.png','/images/banner-03.png','/images/banner-04.png']
   },
 
   /**

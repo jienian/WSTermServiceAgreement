@@ -1,1 +1,24 @@
 /* pages/jiaoxue/jiaoxue.wxss */
+.swiper{
+  margin:1rem;
+  border:30rpx solid #cccccc;
+}
+.iim{
+  display: flex;
+  justify-content: space-evenly;
+}
+.im image{
+  width: 160rpx;
+  height: 4rem;
+}
+.im .d{
+  text-align: center;
+}
+.biaoti{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 1rem;
+}

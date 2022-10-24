@@ -1,2 +1,33 @@
 <!--pages/jiaoxue/jiaoxue.wxml-->
-<text>pages/jiaoxue/jiaoxue.wxml</text>
+<view class="swiper">
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" autoplay="true">
+    <block wx:for="{{background}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" style="width: 100%;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="iim">
+  <view class="im">
+    <image src="/images/健身操 .png"></image>
+    <view class="d">健美</view>
+  </view>
+  <view class="im">
+    <image src="/images/健身房.png"></image>
+    <view class="d">健身房</view>
+  </view>
+  <view class="im">
+    <image src="/images/瑜伽.png"></image>
+    <view class="d">瑜伽</view>
+  </view>
+</view>
+
+<view class="biaoti">
+<p>热门视频</p>
+</view>
+
+<view class="video">
+ aaa
+</view>
