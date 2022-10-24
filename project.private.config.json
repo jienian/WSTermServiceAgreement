@@ -19,6 +19,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/jiaoxue/jiaoxue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

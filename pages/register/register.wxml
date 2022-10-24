@@ -72,10 +72,11 @@
     </label>
   </checkbox-group>
 </view>
+<!--  -->
 <view class="weui-form__opr-area">
   <button type="primary" bindtap="reister">注册</button>
 </view>
-
+<!--  -->
 <view aria-role="alert" hidden="{{msg ? false : true}}" class="weui-hidden_abs">未同意《相关条款》</view>
 
 <!--版本  -->

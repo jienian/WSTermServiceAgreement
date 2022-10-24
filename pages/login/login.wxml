@@ -1,2 +1,46 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="logo">
+  <image src="/images/Large_Logo.png"></image>
+</view>
+<!--  -->
+<view class="h1">
+  <h1>WS健身俱乐部</h1>
+</view>
+<!--  -->
+<view class="weui-form__control-area">
+  <view class="weui-cells__group weui-cells__group_form">
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">用户名</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="用户名" placeholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">密码</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="密码" placeholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+      <!--  -->
+      <view class="weui-form__opr-area">
+        <button type="primary" bindtap="login">登录</button>
+      </view>
+      <!--  -->
+      <view class="weui-form__tips-area">
+  <checkbox-group bindchange="checkboxChange">
+    <label aria-role="" class="weui-wa-hotarea weui-agree {{msg ? 'weui-agree_animate' : ''}}">
+      <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
+      <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt js_agree_link" aria-role="checkbox"></view>
+      <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text>
+        <navigator id="js_agree_link">《相关条款》</navigator>
+       <navigator id="js_agree_link" src="../register/register">新用户注册</navigator>
+      </view>
+  
+    </label>
+  </checkbox-group>
+</view>
+      <view aria-role="alert" hidden="{{msg ? false : true}}" class="weui-hidden_abs">未同意《相关条款》</view>
+    </view>
+  </view>
+</view>
